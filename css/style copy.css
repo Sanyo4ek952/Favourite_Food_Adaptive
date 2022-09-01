@@ -1,0 +1,269 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+	/* color: #000; */
+	/* font-family:""; */
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	padding: 50px;
+}
+/* ------------------------------ */
+/* 
+.block {
+	background: url("../img/image_1.jpg") center / cover no-repeat;
+	color: #fff;
+	padding: 100px 50px;
+}
+.block > *:not(:last-child) {
+	margin: 0px 0px 30px 0px;
+}
+.block__title {
+	font-size: 50px;
+	line-height: 1.2;
+}
+.block__sub-title {
+	font-size: 30px;
+}
+.block__text {
+	padding: 0px 20px;
+	line-height: 1.2;
+}
+.block__button {
+	display: inline-block;
+	color: #fff;
+	font-size: 12px;
+	text-transform: uppercase;
+	line-height: 48px;
+	padding: 0px 50px 0px 20px;
+	background: #c40b0b url("../img/button.png") right / auto 100% no-repeat;
+}
+ */
+
+.items {
+}
+.item {
+	background-color: #7a956b;
+	padding: 30px;
+	color: #fff;
+	width: 33.333%;
+	margin: 0px 20px 0px 0px;
+}
+
+/* Вариант с фоном background */
+/* 
+
+ */
+
+/* Вариант с before */
+/* 
+.perspiciatis {
+	font-size: 0;
+}
+.perspiciatis__item {
+	display: inline-block;
+	width: 365px.perspiciatis {
+	font-size: 0;
+}
+.perspiciatis__item {
+	display: inline-block;
+	width: 33.333%;
+	vertical-align: top;
+	padding: 0px 30px 0px 86px;
+}
+
+.perspiciatis__title {
+	color: #f2726f;
+	font-size: 19px;
+	line-height: 1.37;
+	font-weight: 900;
+	margin: 0px 0px 10px 0px;
+}
+.perspiciatis__text {
+	color: #4b4b4b;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.15px;
+}
+.perspiciatis__item_1 {
+	background: url("../img/test/01.svg") 0 0 no-repeat;
+}
+.perspiciatis__item_2 {
+	background: url("../img/test/02.svg") 0 0 no-repeat;
+}
+.perspiciatis__item_3 {
+	background: url("../img/test/03.svg") 0 0 no-repeat;
+};
+	vertical-align: top;
+	padding: 0px 30px 0px 0px;
+}
+.perspiciatis__title {
+	color: #f2726f;
+	font-size: 19px;
+	line-height: 1.37;
+	font-weight: 900;
+	margin: 0px 0px 10px 0px;
+}
+.perspiciatis__text {
+	color: #4b4b4b;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.15px;
+}
+.perspiciatis__icon {
+	display: inline-block;
+	width: 86px;
+	height: 63px;
+	vertical-align: top;
+}
+
+.perspiciatis__icon::before {
+	content: "";
+	width: 63px;
+	height: 63px;
+	display: block;
+}
+.perspiciatis__body {
+	width: 235px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.perspiciatis__item_1 .perspiciatis__icon::before {
+	background: url("../img/test/01.svg") 0 0 no-repeat;
+}
+.perspiciatis__item_2 .perspiciatis__icon::before {
+	background: url("../img/test/02.svg") 0 0 no-repeat;
+}
+.perspiciatis__item_3 .perspiciatis__icon::before {
+	background: url("../img/test/03.svg") 0 0 no-repeat;
+}
+ */
+
+/* Вариант с before #2 + :ntc-child() */
+
+/* 
+.perspiciatis {
+	font-size: 0;
+}
+.perspiciatis__item {
+	display: inline-block;
+	width: 390px;
+	vertical-align: top;
+	padding: 0px 30px 0px 0px;
+}
+.perspiciatis__item::before {
+	display: inline-block;
+	width: 86px;
+	height: 63px;
+	content: "";
+	vertical-align: top;
+}
+.perspiciatis__item:nth-child(1)::before {
+	background: url("../img/test/01.svg") 0 0 no-repeat;
+}
+.perspiciatis__item:nth-child(2)::before {
+	background: url("../img/test/02.svg") 0 0 no-repeat;
+}
+.perspiciatis__item:nth-child(3)::before {
+	background: url("../img/test/03.svg") 0 0 no-repeat;
+}
+
+.perspiciatis__title {
+	color: #f2726f;
+	font-size: 19px;
+	line-height: 1.37;
+	font-weight: 900;
+	margin: 0px 0px 10px 0px;
+}
+.perspiciatis__body {
+	width: 235px;
+	display: inline-block;
+	vertical-align: top;
+}
+.perspiciatis__text {
+	color: #4b4b4b;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.15px;
+}
+ */
+
+/* Вариант с img */
+
+.perspiciatis {
+	font-size: 0;
+}
+.perspiciatis__item {
+	display: inline-block;
+	width: 365px;
+	vertical-align: top;
+	padding: 0px 30px 0px 0px;
+}
+.perspiciatis__title {
+	color: #f2726f;
+	font-size: 19px;
+	line-height: 1.37;
+	font-weight: 900;
+	margin: 0px 0px 10px 0px;
+}
+.perspiciatis__text {
+	color: #4b4b4b;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.15px;
+}
+.perspiciatis__icon {
+	display: inline-block;
+	width: 86px;
+	vertical-align: top;
+}
+.perspiciatis__body {
+	width: 235px;
+	display: inline-block;
+	vertical-align: top;
+}
